@@ -1,0 +1,9 @@
+date: 2026-11-15T05:26:55+00:00
+fio: fio-3.36
+Linux ACER0390 5.15.146.1-microsoft-standard-WSL2 #1 SMP Thu Jan 11 04:09:03 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+engine: libaio
+target: /tmp/fio-lab (/dev/sdc       ext4 1055762868 11402372 990657024   2% /)
+CPU(s):                             12
+Model name:                         12th Gen Intel(R) Core(TM) i5-12450H
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       644Mi       5.6Gi       3.0Mi       1.7Gi       7.0Gi
