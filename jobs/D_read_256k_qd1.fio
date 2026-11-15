@@ -1,0 +1,17 @@
+; Case D: pattern=read bs=256k read-mix=100% iodepth=1
+[global]
+ioengine=libaio
+direct=1
+size=1g
+runtime=45
+time_based=1
+ramp_time=5
+group_reporting=1
+filename=/tmp/fio-lab/db-test.bin
+percentile_list=50:95:99
+
+[case-D-qd1]
+rw=read
+bs=256k
+iodepth=1
+numjobs=1

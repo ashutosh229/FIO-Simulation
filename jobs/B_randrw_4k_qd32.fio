@@ -1,0 +1,18 @@
+; Case B: pattern=randrw bs=4k read-mix=70% iodepth=32
+[global]
+ioengine=libaio
+direct=1
+size=1g
+runtime=45
+time_based=1
+ramp_time=5
+group_reporting=1
+filename=/tmp/fio-lab/db-test.bin
+percentile_list=50:95:99
+
+[case-B-qd32]
+rw=randrw
+bs=4k
+rwmixread=70
+iodepth=32
+numjobs=1
